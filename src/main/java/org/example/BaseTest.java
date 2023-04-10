@@ -10,12 +10,11 @@ public  class BaseTest {
     protected static WebDriver driver;
 
     @BeforeClass
-    public static void setUp() throws InterruptedException {
+    public static void setUp()  {
         WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.sololearn.com");
-        Thread.sleep(1000);
     }
 
     @AfterClass
