@@ -31,6 +31,7 @@ public class SignUpTest extends BaseTest {
             databaseConfig.setEmailAndPassword(email, password);
         }
 
+
     }
 
 }
